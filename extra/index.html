@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tbody>
+          <tr>
+            <th><code>backface-visibility: visible;</code></th>
+            <th><code>backface-visibility: hidden;</code></th>
+          </tr>
+          <tr>
+            <td>
+              <div class="container">
+                <div class="cube showbf">
+                  <div class="face front">1</div>
+                  <div class="face back">2</div>
+                  <div class="face right">3</div>
+                  <div class="face left">4</div>
+                  <div class="face top">5</div>
+                  <div class="face bottom">6</div>
+                </div>
+              </div>
+              <p>All the faces are transparent and the three back faces are visible through the front ones.</p>
+            </td>
+            <td>
+              <div class="container">
+                <div class="cube hidebf">
+                  <div class="face front">1</div>
+                  <div class="face back">2</div>
+                  <div class="face right">3</div>
+                  <div class="face left">4</div>
+                  <div class="face top">5</div>
+                  <div class="face bottom">6</div>
+                </div>
+              </div>
+              <p>No face is opaque, but the three back faces are always hidden now.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+</html>

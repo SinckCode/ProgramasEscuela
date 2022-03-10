@@ -1,0 +1,33 @@
+table{
+    width: 600px;
+    margin: auto;
+}
+
+caption{
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: brown;
+}
+
+th{
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* tr{
+    background-color: gainsboro;
+    
+} */
+
+tbody tr:nth-child(odd){
+    background-color: rgb(228, 230, 231);
+}
+
+tfoot{
+background-color: beige;
+color: tomato;
+}
+
+td{
+    text-align: center;
+}

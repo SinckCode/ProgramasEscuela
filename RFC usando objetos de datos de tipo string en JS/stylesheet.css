@@ -1,0 +1,23 @@
+:root{
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px;/*1rem = 10px*/
+    font-family: 'Krub', sans-serif;
+}
+
+
+

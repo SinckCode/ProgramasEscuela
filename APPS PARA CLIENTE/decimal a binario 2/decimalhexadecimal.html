@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+	<title>DE DECIMAL A HEXADECIMAL</title>
+	<meta charset="utf-8"/>
+	
+    <style>
+        body {
+            background-color: rgb(76, 217, 230);
+            font-family: Arial;
+        }
+        h1 {
+            font-family: Arial;
+            text-align: center;
+        }
+        .boton_a {
+            padding: 15px;
+            background-color: rgb(167, 39, 24);
+            font-family: Arial;
+            color: white;
+            width: 200px;
+            text-align: center;
+            clear: both;
+            border-radius: 40px;
+            border-bottom-left-radius: 50cm;
+        }
+    </style>
+    <script>
+
+
+function decimalahexadecimal()
+{
+	let decimal = parseInt(document.getElementById("Decimal").value);
+	let resultado = decimal.toString(16);
+
+	mensaje="<p> El numero decimal "+decimal+" en hexadecimal es: "+resultado+"</p>";
+	document.getElementById("salida").innerHTML=mensaje;
+}
+    </script>
+</head>
+<body>
+    <header>
+        <h1>DE DECIMAL A HEXADECIMAL</h1>
+    </header>
+    <main>
+        <form>
+            <p>
+                
+                <input type="number" id="Decimal" placeholder="Decimal">
+            </p>
+                <button type="button" onclick="decimalahexadecimal()">Mostrar resultado</button>
+            </p>
+        </form>
+        <div id="salida" class="salida">
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>DE DECIMAL A BINARIO</title>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body onload="decimalBina();"> 
+   
+        
+
+        <script>
+            
+            var num = prompt('pon el numero');
+            var restod = 0;
+            var restoAlmacenado = 0;
+            var binario = "";
+            var decibien = "";
+            var numero = num + ".";
+            var parteentera = numero.split(".")[0];
+            var numerodecifra = numero.split(".")[1].length;
+            var decimal = numero.split(".")[1]
+        
+            for (var i = 0; i < numerodecifra; i++)
+                decimal /= 10;
+        
+            function  decimalBina() {
+                while (parteentera >= 1) {
+                   //En esta variable se almacena el resto.
+                    restoAlmacenado = parseInt(parteentera) % 2;
+                    //En esta variable guardamos el resto y se lo concatenamos al STRING ya almacenado.
+                    binario = restoAlmacenado.toString().concat(binario);
+                    //Se actualiza el valor de la variable al dividirla entre 2.
+                    parteentera /= 2;
+                }//Comprueba si hay decimales o no
+                if (decimal != 0)
+                    while (decimal != 1) {
+                        decimal *= 2;
+                        decibien = decibien.concat(decimal.toString().charAt(0));
+                        if (decimal > 1)
+                            decimal -= 1;
+                    }
+                if (decimal > 0 && decimal != 0)
+                    if (num < 1)
+                        document.write(0 + "." + decibien);
+                    else
+                        document.write( "El numero en binario es ",binario + "." + decibien);
+                else
+                    document.write("El numero en binario es ",binario);
+            }
+        
+
+
+
+        </script>
+    
+</body>
+</html>
+

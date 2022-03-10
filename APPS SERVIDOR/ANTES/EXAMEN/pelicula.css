@@ -1,0 +1,32 @@
+img{
+    border-radius:20% ;
+}
+
+table{
+    border: 2px solid olive;
+    width: 800px;
+    margin: auto;
+}
+tr{
+    border-bottom: 2px solid gray;
+}
+td{
+    padding: 5px;
+}
+th{
+    background-color: aquamarine;
+}
+
+#wrap {
+    width:995px;
+  }
+
+
+html, body, form, h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl {
+    margin:0;
+    padding:0;
+  }
+  
+  ul,li {
+    list-style-type:none;
+  }

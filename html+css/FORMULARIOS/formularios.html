@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Fromulario</title>
+</head>
+
+<body>
+
+
+    <header>
+        <div>
+            <h2>Manejo de formularios</h2>
+        </div>
+    </header>
+
+    <main class="contenedor seccion contenido-centrado">
+
+
+        <form class="contacto" action="">
+            <fieldset>
+                <legend>Registro de Automoviles</legend>
+                <label for="marca">Marca:</label>
+                <input type="text" name="marca" id="marca" placeholder="La Marca">
+
+                <label for="modelo">Modelo:</label>
+                <input type="text" name="modelo" id="modelo" placeholder="Modelo del auto" required>
+
+                <label for="fecha">Fecha de Compra:</label>
+                <input type="date" name="fecha" id="fecha" placeholder="Cuando lo compro?" required>
+
+                <label for="codigo">Codigo del Auto:</label>
+                <input type="password" name="codigo" id="codigo" placeholder="Su Codigo es?" required>
+
+                <label for="color">Color del Auto:</label>
+                <input type="color" name="color" id="color" required>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
+
+                <label for="imagen">Su auto es este:</label>
+                <input type="image" src="image/pexels-albin-berlin-919073.jpg">
+
+                <label for="mensaje">Mensaje: </label>
+                <textarea id="mensaje"></textarea>
+
+                <label for="puertas">Numero de puertas</label>
+                <select name="puertas" id="puertas">
+                    <option value="2">
+                        2 puertas
+                    </option>
+                    <option value="4">
+                        4 puertas
+                    </option>
+                    <option value="5">
+                        5 puertas
+                    </option>
+                </select>
+                <label for="precio">Precio del Auto</label>
+                <input type="number" min="50000" max="500000" name="precio" step="10000" id="precio">
+
+                <label>Material del Auto
+                    <input list="material" name="material" /></label>
+                <datalist id="material">
+                    <option value="Acero">
+                    <option value="Aluminio">
+                    <option value="Fibra de carbono">
+                </datalist>
+                <div class="check">
+                    <fieldset>
+                        <legend> Equipamiento del Auto</legend>
+                        <label for="eq1">Rines de aluminio</label>
+                        <input type="checkbox" id="eq1" name="eq1">
+                        <label for="eq2">Asientos de piel</label>
+                        <input type="checkbox" id="eq2" name="eq2">
+                        <label for="eq3">Pantalla de 12"</label>
+                        <input type="checkbox" id="eq3" name="eq3">
+                        <label for="eq4">Faros de niebla</label>
+                        <input type="checkbox" id="eq4" name="eq4">
+
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset>
+                        <legend>Transmision</legend>
+                        <label for="sta">Estandar</label>
+                        <input type="radio" name="tra" id="sta" value="Estandar" required>
+                        <label for="sta">Automatico</label>
+                        <input type="radio" name="tra" id="aut" value="Automatico" required>
+                        <label for="sta">Hibrido</label>
+                        <input type="radio" name="tra" id="hib" value="Hibrido" required>
+
+                    </fieldset>
+                </div>
+                <br>
+                <label for="seguro">Aseguradora</label>
+                <input type="text" list="asegura" id="seguro">
+                <datalist id="asegura">
+                    <option value="AXXA">
+                    <option value="HDI">
+                    <option value="INBURSA">
+                    <option value="GNP">
+                </datalist>
+            </fieldset>
+
+            </fieldset>
+
+
+
+
+            <input type="submit" value="Enviar" class="button">
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
